@@ -62,7 +62,6 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            width: auto;
         }
 
         .skills div,
@@ -74,6 +73,7 @@
             background: #f0f0f0;
             border-radius: 8px;
             transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .skills div:hover,
@@ -112,18 +112,13 @@
             background-color: #ff1e5b;
         }
 
-        .companyLogo {
-            display: none;
-        }
+        @media only screen and (max-width: 768px) {
 
-        @media only screen and (min-width: 768px) {
-            .companyLogo {
-                display: block;
-                height: 25%;
-                width: 100%;
-            }
-            .projects div{
-                flex: 1 1 100% !important;
+            .skills div,
+            .projects div,
+            .experience div,
+            .education div {
+                flex: 1 1 100%;
             }
         }
     </style>
@@ -184,41 +179,42 @@
         <div class="section">
             <h2>Experience</h2>
             <div class="experience">
-                        <strong>Web Developer</strong>
-                        <p>Phenom (October 2023 - Present)</p>
-                        <ul>
-                            <li>Created multiple responsive websites for mobile and desktop devices using HTML and CSS.
-                                Utilized third-party libraries, including React, to enhance functionality. Focused on
-                                delivering an optimal user experience across all platforms.</li>
-                            <li>Successfully integrated websites with backend services, including databases and APIs.
-                                Enhanced functionality through seamless connections with various services.</li>
-                            <li>Conducted debugging and troubleshooting of websites to identify issues. Efficiently
-                                resolved problems to ensure optimal performance. Focused on enhancing user experience
-                                through effective solutions.</li>
-                            <li>Collaborated with a team of designers, back-end developers, and project managers to
-                                deliver a responsive web application within a tight deadline. Communicated regularly
-                                with stakeholders to ensure alignment with business objectives and incorporated feedback
-                                to improve the user experience. </li>
-                        </ul>
-                    </div>
+                <div>
+                    <strong>Web Developer</strong>
+                    <p>Phenom (October 2023 - Present)</p>
+                    <ul>
+                        <li>Created multiple responsive websites for mobile and desktop devices using HTML and CSS.
+                            Utilized third-party libraries, including React, to enhance functionality. Focused on
+                            delivering an optimal user experience across all platforms.</li>
+                        <li>Successfully integrated websites with backend services, including databases and APIs.
+                            Enhanced functionality through seamless connections with various services.</li>
+                        <li>Conducted debugging and troubleshooting of websites to identify issues. Efficiently resolved
+                            problems to ensure optimal performance. Focused on enhancing user experience through
+                            effective solutions.</li>
+                        <li>Collaborated with a team of designers, back-end developers, and project managers to deliver
+                            a responsive web application within a tight deadline. Communicated regularly with
+                            stakeholders to ensure alignment with business objectives and incorporated feedback to
+                            improve the user experience. </li>
+                    </ul>
                 </div>
-            </div>
-
-            <!-- Education Section -->
-            <div class="section">
-                <h2>Education</h2>
-                <div class="education">
-                    <div>
-                        <strong>Bachelors of Technology</strong>
-                        <p>Lendi Institute of Engineering & Technology (2019-2023)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <p>Contact me on <a href="https://www.linkedin.com/in/sattibabu-gulivindala"
-                        target="_blank">LinkedIn</a> | <a href="mailto:sattibabu@example.com">Gmail</a></p>
-                <p>&copy; 2024 sattibabu-gulivindala. All Rights Reserved.</p>
             </div>
         </div>
 
-        <!--
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education">
+                <div>
+                    <strong>Bachelors of Technology</strong>
+                    <p>Lendi Institute of Engineering & Technology (2019-2023)</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Contact me on <a href="https://www.linkedin.com/in/sattibabu-gulivindala" target="_blank">LinkedIn</a> |
+                <a href="mailto:sattibabu@example.com">Gmail</a></p>
+            <p>&copy; 2024 sattibabu-gulivindala. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!--
