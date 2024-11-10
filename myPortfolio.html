@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #ff4081;
+        }
+
+        .header p {
+            font-weight: 300;
+            color: #777;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        .bio {
+            margin-bottom: 30px;
+        }
+
+        .navigate-button {
+            background-color: #ff1e5b;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1.1em;
+            /* width: 100%; */
+            transition: background-color 0.3s ease;
+        }
+
+        .navigate-button:hover {
+            background-color: #777;
+        }
+        .designation{
+            font-weight: bold !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Gulivindala Sattibabu</h1>
+            <img class="profile-image" src="1731234967884.jpg" alt="Profile Image">
+            <p class="designation">Web Developer</p>
+            <p class="bio">A detail-oriented web developer with a strong foundation in front-end and back-end development. Skilled
+                in JavaScript, React.js, and committed to delivering efficient, user-friendly applications.
+                Passionate about leveraging innovative technologies to solve real-world problems.</p>
+            <!-- Button to navigate to the next page -->
+            <button class="navigate-button" onclick="window.location.href='GetIn.html'">View Skills and More</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
