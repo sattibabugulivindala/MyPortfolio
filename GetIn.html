@@ -58,8 +58,8 @@
         .skills,
         .projects,
         .experience,
-        .education 
-        .certification{
+        .education,
+        .certification {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -69,8 +69,9 @@
         .projects div,
         .experience div,
         .education div,
-        .certification div{
+        .certification div {
             flex: 1 1 45%;
+            /* grow shrink and the basis */
             padding: 20px;
             background: #f0f0f0;
             border-radius: 8px;
@@ -82,8 +83,8 @@
         .projects div:hover,
         .experience div:hover,
         .education div:hover,
-        .certification div:hover{
-            transform: translateY(-5px);
+        .certification div:hover {
+            transform: translateY(-3px);
             background: #ffebf0;
         }
 
@@ -97,22 +98,15 @@
             text-decoration: none;
             font-weight: 600;
         }
-
-        .navigate-button {
-            background-color: #ff4081;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-align: center;
-            font-size: 1.1em;
-            width: 100%;
-            transition: background-color 0.3s ease;
+        .experience div{
+            display: flex;
+            flex-direction: column;
         }
-
-        .navigate-button:hover {
-            background-color: #ff1e5b;
+        .imgContainer{
+            height: 250px;
+        }
+        .projects div{
+            cursor: pointer;
         }
 
         @media only screen and (max-width: 768px) {
@@ -121,7 +115,7 @@
             .projects div,
             .experience div,
             .education div,
-            .certification div{
+            .certification div {
                 flex: 1 1 100%;
             }
         }
@@ -155,7 +149,7 @@
         <div class="section">
             <h2>Projects</h2>
             <div class="projects">
-                <div>
+                <div id="TitanCareers">
                     <strong>Titan Careers</strong>
                     <h3>Developer</h3>
                     <hr>
@@ -163,14 +157,14 @@
                         user-friendly navigation, job listings, and application forms, ensuring a seamless experience
                         for both candidates and recruiters.</p>
                 </div>
-                <div>
+                <div id="QuestCareers">
                     <strong>Quest Global Careers</strong>
                     <h3>Developer</h3>
                     <hr>
                     <p>Developed and maintained responsive user interfaces, integrating APIs for dynamic content
                         retrieval and ensuring high performance across global regions.</p>
                 </div>
-                <div>
+                <div id="IDFCCareers">
                     <strong>IDFC FIRST Bank</strong>
                     <h3>Developer</h3>
                     <hr>
@@ -184,8 +178,9 @@
             <h2>Experience</h2>
             <div class="experience">
                 <div>
+                    <img src="image.png" class="imgContainer">
                     <strong>Web Developer</strong>
-                    <p>Phenom (October 2023 - Present)</p>
+                    <p>IMOMENTOUS SOFTWARE PRIVATE LIMITED (October 2023 - Present)</p>
                     <ul>
                         <li>Created multiple responsive websites for mobile and desktop devices using HTML and CSS.
                             Utilized third-party libraries, including React, to enhance functionality. Focused on
@@ -203,9 +198,7 @@
                 </div>
             </div>
         </div>
-
-<!--         Certification Section -->
-                <div class="section">
+        <div class="section">
             <h2>Certificates</h2>
             <div class="certification">
                 <div>
@@ -231,9 +224,23 @@
         </div>
         <div class="footer">
             <p>Contact me on <a href="https://www.linkedin.com/in/sattibabu-gulivindala" target="_blank">LinkedIn</a> |
-                <a href="mailto:sattibabu@example.com">Gmail</a></p>
+                <a href="mailto:sattibabugulivindala1442@gmail.com">Gmail</a>
+            </p>
             <p>&copy; 2024 sattibabu-gulivindala. All Rights Reserved.</p>
         </div>
     </div>
-
-    <!--
+    <script>
+        let TitanCareersContainer=document.getElementById("TitanCareers")
+        TitanCareersContainer.addEventListener("click",function(){
+            window.open("https://google.com")
+        })
+        let QuestCareersContainer=document.getElementById("QuestCareers")
+        QuestCareersContainer.addEventListener("click",function(){
+            window.location.href="https://careers.quest-global.com/global/en"
+        })
+        let IdfcCareersContainer=document.getElementById("IDFCCareers")
+        IdfcCareersContainer.addEventListener("click",function(){
+            window.location.href="careers.idfcfirstbank.com/in/en"
+        })
+    </script>
+</body>
