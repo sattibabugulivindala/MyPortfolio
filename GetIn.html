@@ -58,7 +58,8 @@
         .skills,
         .projects,
         .experience,
-        .education {
+        .education 
+        ..certification{
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -67,7 +68,8 @@
         .skills div,
         .projects div,
         .experience div,
-        .education div {
+        .education div,
+        .certification div{
             flex: 1 1 45%;
             padding: 20px;
             background: #f0f0f0;
@@ -79,7 +81,8 @@
         .skills div:hover,
         .projects div:hover,
         .experience div:hover,
-        .education div:hover {
+        .education div:hover,
+        .certification div:hover{
             transform: translateY(-5px);
             background: #ffebf0;
         }
@@ -117,7 +120,8 @@
             .skills div,
             .projects div,
             .experience div,
-            .education div {
+            .education div,
+            .certification div{
                 flex: 1 1 100%;
             }
         }
